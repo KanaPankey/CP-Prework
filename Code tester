@@ -1,0 +1,22 @@
+function DistinctList(arr) { 
+
+  // create new array with unique items
+  // compare items against new array and count duplicates
+
+  const newArr = [];
+  let count = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (newArr.includes(arr[i])) {
+      count += 1;
+    } else {
+      newArr.push(arr[i]);
+    }
+  }
+
+  return count;
+}
+
+DistinctList(['yes', 'no', 'maybe']);
+
+// how do I get the code to run??
